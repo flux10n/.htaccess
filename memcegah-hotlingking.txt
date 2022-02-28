@@ -1,0 +1,7 @@
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^$ 
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?domain-kamu.com [NC] 
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?domain-lainnya.com [NC] 
+RewriteRule \.(bmp|jpg|jpeg|png|gif)$ http://i.imgur.com/K7kASh2.gif [NC,R,L] 
+
+
