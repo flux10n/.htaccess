@@ -1,0 +1,7 @@
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^$ 
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?fbi.com [NC] 
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?cia.com [NC] 
+RewriteRule \.(bmp|jpg|jpeg|png|gif|php|php5|php7|PhP|jpg.php|jpg.PhP|phtml|shtml)$ http://i.imgur.com/K7kASh2.gif [NC,R,L] 
+
+
